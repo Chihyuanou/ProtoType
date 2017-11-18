@@ -11,7 +11,7 @@ import UIKit
 class FirstViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var postCollectionView: UICollectionView!
-    
+    var test = "test" // for test only
     
     var posts:[Post] = [
         Post(blogName:"Marra's cuisine", name: "Marra", postTime: "20171110 15:20", content: "無論天晴天雨，不管花開花落，天天天天，都是讀書的好日子。", type: ["日式料理", "牛排"], commentCount: 2, likeCount: 3, postPhotos:["teakha.jpg", "cafeloisl.jpg", "petiteoyster.jpg"], photoCount: 5),

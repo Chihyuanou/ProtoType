@@ -36,10 +36,11 @@ class FirstViewController: UIViewController, UICollectionViewDelegate, UICollect
         cell.blogNameLabel.text = posts[indexPath.row].blogName
         cell.nameLabel.text = posts[indexPath.row].name
         cell.postTimeLabel.text = posts[indexPath.row].postTime
-        cell.typeLabel.text = posts[indexPath.row].type[0]
+//        cell.typeLabel.text = posts[indexPath.row].type[0]
         cell.contentLabel.text = posts[indexPath.row].content
         cell.commentCountLabel.text = String(posts[indexPath.row].commentCount) + "個留言"
         cell.likeCountLabel.text = String(posts[indexPath.row].likeCount) + "個叉"
+        cell.photoCountLabel.text = String(posts[indexPath.row].photoCount)
         cell.firstPhotoImageView.image = UIImage(named: posts[indexPath.row].postPhotos[0])
         return cell
     }
